@@ -5,9 +5,12 @@ import hallmark from "/ableton-hallmark.svg";
 export default function Navbar() {
 	return (
 		<header>
-			<nav className="relative flex justify-between pl-4">
+			<nav className="relative flex justify-between pl-4 xs:py-4 border-b-2 border-neutral-100">
 				<img className="w-14" src={hallmark} alt="Ableton Hallmark" />
-				<Dropdown />
+
+				<div className="xs:hidden">
+					<Dropdown />
+				</div>
 			</nav>
 		</header>
 	);
