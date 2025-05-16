@@ -5,14 +5,87 @@ import hallmark from "/ableton-hallmark.svg";
 export default function Navbar() {
 	return (
 		<header>
-			<nav className="relative flex justify-between pl-4 xs:py-4 border-b-2 border-neutral-100">
+			<nav className="relative flex justify-between xs:justify-start items-center pl-4 xs:py-4 border-b-2 border-neutral-100">
 				<img className="w-14" src={hallmark} alt="Ableton Hallmark" />
+
+				<HeadingLinks />
 
 				<div className="xs:hidden">
 					<Dropdown />
 				</div>
 			</nav>
 		</header>
+	);
+}
+
+function HeadingLinks() {
+	return (
+		<ol className="hidden xs:flex justify-between w-full px-5">
+			<li>
+				<ol className="flex gap-x-5 text-sm font-semibold">
+					<li>
+						<a href="/" className="hover:underline">
+							Live
+						</a>
+					</li>
+					<li>
+						<a href="/" className="hover:underline">
+							Push
+						</a>
+					</li>
+					<li>
+						<a href="/" className="hover:underline">
+							Move
+						</a>
+					</li>
+					<li className="hidden sm:block">
+						<a href="/" className="hover:underline">
+							Note
+						</a>
+					</li>
+					<li className="hidden sm:block">
+						<a href="/" className="hover:underline">
+							Link
+						</a>
+					</li>
+					<li className="hidden sm:block">
+						<a href="/" className="hover:underline">
+							Shop
+						</a>
+					</li>
+					<li className="hidden sm:block">
+						<a href="/" className="hover:underline">
+							Packs
+						</a>
+					</li>
+					<li className="hidden sm:block">
+						<a href="/" className="hover:underline">
+							Help
+						</a>
+					</li>
+
+					<li>
+						<a href="/" className="text-[#ff764d]">
+							More +
+						</a>
+					</li>
+				</ol>
+			</li>
+
+			<li className="hidden lg:block">
+				<ol className="flex gap-x-5 text-sm font-semibold">
+					<li>
+						<a href="/" className="text-[#0000ff]">
+							Try Live 12 for free
+						</a>
+					</li>
+
+					<li>
+						<a href="/">Log in or register</a>
+					</li>
+				</ol>
+			</li>
+		</ol>
 	);
 }
 
