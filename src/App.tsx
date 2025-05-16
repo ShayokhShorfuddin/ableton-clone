@@ -1,3 +1,4 @@
+import Hero from "./components/Hero";
 import Navbar from "./components/navbar";
 
 export default function App() {
@@ -5,7 +6,7 @@ export default function App() {
 		<>
 			<Navbar />
 			<main>
-				<h1>Hello world!</h1>
+				<Hero />
 			</main>
 		</>
 	);
