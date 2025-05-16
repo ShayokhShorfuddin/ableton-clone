@@ -74,7 +74,7 @@ function Dropdown() {
 
 function NavbarDropdown() {
 	return (
-		<div className="border border-stone-700 rounded-xl px-4 py-3 w-min">
+		<div className="border border-stone-700 rounded-xl px-4 py-3 w-min bg-white">
 			<ul className="space-y-2.5">
 				<li>
 					<a href="/">
