@@ -1,7 +1,11 @@
+import Wordmark from "@/assets/ableton-wordmark.svg";
+import HeadingImage from "@/assets/header.jpg";
+
 export default function Hero() {
 	return (
 		<>
 			<HeadingLinks />
+			<Heading />
 		</>
 	);
 }
@@ -25,5 +29,22 @@ function HeadingLinks() {
 				</a>
 			</li>
 		</ol>
+	);
+}
+
+function Heading() {
+	return (
+		<div className="relative flex justify-center min-h-[35rem] px-4 overflow-hidden">
+			<img
+				src={HeadingImage}
+				alt="Man working on music equipment"
+				className="w-auto object-cover"
+			/>
+			<img
+				className="absolute top-1/2 left-1/2 -translate-x-1/2 w-[13rem] sm:w-[20rem] md:w-[28rem]"
+				src={Wordmark}
+				alt=""
+			/>
+		</div>
 	);
 }
