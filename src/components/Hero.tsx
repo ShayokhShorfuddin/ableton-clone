@@ -12,7 +12,7 @@ export default function Hero() {
 
 function HeadingLinks() {
 	return (
-		<ol className="sticky top-0 z-10 flex gap-x-4 p-6 text-sm font-semibold bg-white">
+		<ul className="sticky top-0 z-10 flex gap-x-4 p-6 text-sm font-semibold bg-white">
 			<li>
 				<a href="/" className="hover:underline text-[#ff764d]">
 					About
@@ -28,7 +28,7 @@ function HeadingLinks() {
 					Apprenticeships
 				</a>
 			</li>
-		</ol>
+		</ul>
 	);
 }
 

@@ -56,7 +56,7 @@ function AboutAbleton() {
 
 function Socials() {
 	return (
-		<ol className="flex gap-x-3 mt-5">
+		<ul className="flex gap-x-3 mt-5">
 			<li>
 				<img className="size-9" src={Facebook} alt="Facebook" />
 			</li>
@@ -80,7 +80,7 @@ function Socials() {
 			<li>
 				<img className="size-9" src={Discord} alt="Discord" />
 			</li>
-		</ol>
+		</ul>
 	);
 }
 
@@ -184,7 +184,7 @@ function LocationAndLanguage() {
 function FooterLinks() {
 	return (
 		<div className="flex flex-wrap gap-y-5 gap-x-5 justify-between pt-14 md:pt-20">
-			<ol className="flex flex-wrap gap-x-4 md:items-center text-nowrap">
+			<ul className="flex flex-wrap gap-x-4 md:items-center text-nowrap">
 				<li>
 					<a href="/" className="hover:underline text-sm font-semibold">
 						Contact Us
@@ -220,7 +220,7 @@ function FooterLinks() {
 						Imprint
 					</a>
 				</li>
-			</ol>
+			</ul>
 
 			<div className="flex gap-x-3 items-center">
 				<p className="text-sm font-semibold">Made in Berlin</p>

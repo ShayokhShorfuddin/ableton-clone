@@ -20,9 +20,9 @@ export default function Navbar() {
 
 function HeadingLinks() {
 	return (
-		<ol className="hidden xs:flex justify-between w-full px-5">
+		<ul className="hidden xs:flex justify-between w-full px-5">
 			<li>
-				<ol className="flex gap-x-5 text-sm font-semibold">
+				<ul className="flex gap-x-5 text-sm font-semibold">
 					<li>
 						<a href="/" className="hover:underline">
 							Live
@@ -69,11 +69,11 @@ function HeadingLinks() {
 							More +
 						</a>
 					</li>
-				</ol>
+				</ul>
 			</li>
 
 			<li className="hidden lg:block">
-				<ol className="flex gap-x-5 text-sm font-semibold">
+				<ul className="flex gap-x-5 text-sm font-semibold">
 					<li>
 						<a href="/" className="text-[#0000ff]">
 							Try Live 12 for free
@@ -83,9 +83,9 @@ function HeadingLinks() {
 					<li>
 						<a href="/">Log in or register</a>
 					</li>
-				</ol>
+				</ul>
 			</li>
-		</ol>
+		</ul>
 	);
 }
 
