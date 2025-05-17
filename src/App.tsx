@@ -74,9 +74,9 @@ export default function App() {
 				/>
 
 				<CTA />
-
-				<Footer />
 			</main>
+
+			<Footer />
 		</>
 	);
 }
