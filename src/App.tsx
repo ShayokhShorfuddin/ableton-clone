@@ -3,6 +3,7 @@ import GroupPics2 from "@/assets/group-pics-2.png";
 import GroupPics3 from "@/assets/group-pics-3.png";
 import Video from "@/assets/video.png";
 import Waves from "@/assets/waves.jpg";
+import CTA from "./components/CTA";
 import Hero from "./components/Hero";
 import TextBlock from "./components/TextBlock";
 import Navbar from "./components/navbar";
@@ -70,6 +71,8 @@ export default function App() {
 					heading={textBlockData[5].heading}
 					subHeading={textBlockData[5].subHeading}
 				/>
+
+				<CTA />
 			</main>
 		</>
 	);
