@@ -4,6 +4,7 @@ import GroupPics3 from "@/assets/group-pics-3.png";
 import Video from "@/assets/video.png";
 import Waves from "@/assets/waves.jpg";
 import CTA from "./components/CTA";
+import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import TextBlock from "./components/TextBlock";
 import Navbar from "./components/navbar";
@@ -73,6 +74,8 @@ export default function App() {
 				/>
 
 				<CTA />
+
+				<Footer />
 			</main>
 		</>
 	);
